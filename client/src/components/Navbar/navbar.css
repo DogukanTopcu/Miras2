@@ -39,6 +39,29 @@
 }
 
 
+
+.navbar-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.saved-icon {
+    color: #fffbef;
+    margin-top: 3px;
+    cursor: pointer;
+    margin-right: 3px;
+}
+.dropdown-button {
+    background-color: rgb(140, 137, 137);
+    color: white;
+    padding: 3px 10px;
+    margin-left: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
 @media screen and (max-width: 760px) {
     .navbar-content {
         padding: 5px 50px;

@@ -11,7 +11,12 @@ const usersSchema = mongoose.Schema({
     createdAt: {
         type: Date,
         default: new Date()
-    }
+    },
+
+    advisor: {
+        type: String,
+        default: "none"
+    },
 });
 
 const Users = mongoose.model("Users", usersSchema);
