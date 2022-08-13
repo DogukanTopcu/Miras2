@@ -1,0 +1,93 @@
+.navbar {
+    background-color: #6b3600;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+}
+
+.navbar-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 70px;
+}
+.navbar-content-left h1 {
+    color: #fffbef;
+    font-size: 24px;
+    font-weight: 400;
+
+    font-family: "AlmendraRegular";
+}
+
+.navbar-content-right button {
+    border: none;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 25px;
+    background-color: #fffbef;
+    color: #6b3600;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-content-right button:hover {
+    background-color: #efebdf;
+}
+
+
+@media screen and (max-width: 760px) {
+    .navbar-content {
+        padding: 5px 50px;
+    }
+
+    .navbar-content-left h1 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .navbar-content-right button {
+        padding: 8px 20px;
+        font-size: 15px;
+        font-weight: 400;
+        border-radius: 25px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .navbar-content {
+        padding: 5px 40px;
+    }
+
+    .navbar-content-left h1 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .navbar-content-right button {
+        padding: 6px 18px;
+        font-size: 14px;
+        font-weight: 400;
+        border-radius: 25px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .navbar-content {
+        padding: 5px 30px;
+    }
+
+    .navbar-content-left h1 {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .navbar-content-right button {
+        padding: 5px 15px;
+        font-size: 12px;
+        border-radius: 25px;
+    }
+}

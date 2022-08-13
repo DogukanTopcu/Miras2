@@ -1,0 +1,154 @@
+.miras {
+    min-height: 100%;
+}
+
+.miras-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 60px 70px;
+
+}
+
+.miras-content h1 {
+    font-family: "AlmendraRegular";
+    font-size: 98px;
+    font-weight: 600;
+    color: #fffbef;
+    /* text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); */
+    text-shadow: 10px 10px 35px rgba(255, 255, 255, 0.5);
+}
+.miras-content h4 {
+    font-style: italic;
+    margin-top: -65px;
+    font-family: "Allura";
+    font-size: 68px;
+    font-weight: 400;
+    color: #fffbef;
+    text-shadow: 10px 10px 35px rgba(255, 255, 255, 0.9);
+}
+
+
+.init-buttons {
+    margin-top: -80px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.init-buttons button {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    align-items: center;
+
+    background-color: #fffbef;
+    border: none;
+
+    font-family: "AlmendraRegular";
+    font-size: 30px;
+    border-radius: 25px;
+    margin: 10px 30px;
+    color: #6b3600;
+
+    cursor: pointer;
+}
+.init-buttons button:hover {
+    background-color: #f5f1e6;
+}
+
+
+.miras-content h3 {
+    font-style: italic;
+    margin-top: 20px;
+    font-family: "Allura";
+    font-size: 68px;
+    font-weight: 400;
+    color: #fffbef;
+    text-shadow: 10px 10px 35px rgba(255, 255, 255, 0.9);
+}
+
+.init-vip {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: -10px;
+    text-decoration: underline;
+    color: #fffbef;
+}
+.init-vip h2 {
+    font-family: "AlmendraRegular";
+    font-size: 48px;
+    font-weight: 400;
+    color: #fffbef;
+    /* text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); */
+    text-shadow: 10px 10px 35px rgba(255, 255, 255, 0.5);
+
+    text-align: left;
+}
+
+.init-carousel {
+    display: flex;
+
+}
+.carousel-container {
+    max-width: 800px;
+    overflow-x: auto;
+}
+
+
+
+
+
+@media screen and (max-width: 428px) {
+    .miras-content {
+        margin-top: 80px;
+        padding: 0 10px;
+    }
+    .miras-content h1 {
+        font-size: 48px;
+        font-weight: 600;
+    }
+    .miras-content h4 {
+        margin-top: -35px;
+        font-size: 28px;
+        text-shadow: 10px 10px 15px rgba(255, 255, 255, 0.8);
+    }
+
+
+    .init-buttons {
+        margin-top: -30px;
+    }
+
+    .init-buttons button {
+        padding: 10px 20px;
+        border-radius: 15px;
+
+        font-size: 16px;
+        margin: 5px 0;
+
+    }
+
+    .miras-content h3 {
+        margin-top: 20px;
+        font-size: 28px;
+        text-shadow: 10px 10px 15px rgba(255, 255, 255, 0.8);
+    }
+
+    .init-vip {
+        margin-top: 0px;
+    }
+    .init-vip h2 {
+        font-size: 28px;
+    }
+
+    .init-carousel {
+        display: flex;    
+    }
+    .carousel-container {
+        max-width: 350px;
+    }
+}

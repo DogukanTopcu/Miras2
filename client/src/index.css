@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.outlet {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1700px;
+  margin: auto;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+
+
+/* FONTS */
+@font-face {
+  font-family: "Allura";
+  src: url("./assets/fonts/Allura-Regular.otf");
+}
+
+@font-face {
+  font-family: "AlmendraRegular";
+  src: url("./assets/fonts/Almendra-Regular.otf");
+}
+@font-face {
+  font-family: "AlmendraBold";
+  src: url("./assets/fonts/Almendra-Bold.otf");
+}

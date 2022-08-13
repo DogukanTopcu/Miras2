@@ -1,0 +1,47 @@
+
+
+
+.advisors-content {
+    padding: 20px 100px;
+}
+
+.vip-advisors h2, .non-vip-advisors h2 {
+    font-family: "AlmendraRegular";
+    color: #964c01;
+    text-decoration: underline;
+
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.home-carousel {
+    display: flex;
+}
+
+.home-carousel-container {
+    overflow-x: auto;
+}
+
+
+.all-advisors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+
+@media screen and (max-width: 428px) {
+    .advisors-content {
+        padding: 20px 10px;
+    }
+
+    .vip-advisors h2,
+    .non-vip-advisors h2 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: 50px;
+    }
+}

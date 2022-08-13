@@ -1,0 +1,66 @@
+.kvkk {
+    position: fixed;
+    z-index: 2;
+    max-width: 500px;
+
+    background-color: #fffbef;
+    top: 50%;
+    left: 50%;
+
+    padding: 20px;
+    border-radius: 25px;
+    transform: translate(-50%, -50%);
+}
+
+.kvkk-content {
+    max-height: 500px;
+    overflow-y: auto;
+    border-bottom: 0.5px solid #94552e;
+    border-top: 0.5px solid #94552e;
+}
+
+.kvkk-close-button{
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+}
+.kvkk-close-button button {
+    padding: 10px;
+    border: none;
+    background-color: #94552e;
+    color: #fffbef;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 428px) {
+    .kvkk {
+        max-width: 500px;
+
+        padding: 20px;
+    }
+
+    .kvkk-content {
+        max-height: 400px;
+        overflow-y: auto;
+        border-bottom: 0.5px solid #94552e;
+        border-top: 0.5px solid #94552e;
+    }
+
+    .kvkk-close-button {
+        margin-top: 20px;
+        display: flex;
+        justify-content: end;
+    }
+
+    .kvkk-close-button button {
+        padding: 10px;
+        border: none;
+        background-color: #94552e;
+        color: #fffbef;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+}

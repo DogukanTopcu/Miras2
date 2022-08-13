@@ -1,0 +1,59 @@
+.comments {
+    background-color: #fffbef;
+    padding: 50px 90px;
+}
+
+.user-comment {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+    justify-content: end;
+}
+
+.user-comment input {
+    width: 100%;
+    padding: 10px 50px 10px 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    border-bottom: 2px solid #6b3600;
+    height: 20px;
+}
+
+.user-comment .commend-send {
+    position: absolute;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 428px) {
+    
+    .comments {
+        padding: 10px 0px;
+    }
+
+    .user-comment {
+        padding: 10px;
+        justify-content: end;
+    }
+
+    .user-comment input {
+        padding: 10px 50px 10px 30px;
+        height: 20px;
+    }
+
+    .user-comment .commend-send {
+        position: absolute;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+}

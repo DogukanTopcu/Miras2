@@ -1,0 +1,69 @@
+.comment {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.comment-left {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.comment-left p {
+    margin: 10px 0;
+}
+
+
+.comment-right{
+    color: #6b3600;
+    margin-left: 30px;
+}
+.comment-right h2 {
+    font-size: 18px;
+    font-family: "AlmendraRegular";
+}
+.comment-right p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 428px) {
+    .comment {
+        padding: 0px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .comment-left {
+        margin-left: 15px;
+    }
+
+    .comment-left p {
+        margin: 10px 0;
+    }
+
+
+    .comment-right {
+        margin-left: 20px;
+    }
+
+    .comment-right h2 {
+        font-size: 16px;
+        font-family: "AlmendraRegular";
+    }
+
+    .comment-right p {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 12px;
+    }
+}

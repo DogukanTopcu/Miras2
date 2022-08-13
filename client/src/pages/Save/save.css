@@ -1,0 +1,38 @@
+.save {
+    padding-top: 80px;
+}
+
+.save-content {
+    padding: 10px 40px;
+}
+
+.save-content h1 {
+    font-family: "AlmendraRegular";
+    font-size: 36px;
+    color: #775d56;
+    text-decoration: underline;
+}
+
+.saved-users {
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+
+@media screen and (max-width: 428px) {
+    .save {
+        padding-top: 50px;
+    }
+
+    .save-content {
+        padding: 10px;
+    }
+
+    .save-content h1 {
+        font-size: 24px;
+    }
+
+}

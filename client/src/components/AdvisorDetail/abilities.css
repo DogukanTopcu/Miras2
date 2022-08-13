@@ -1,0 +1,56 @@
+.abilities {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.ability-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.abilities-info {
+    margin-left: 20px;
+}
+
+.abilities-info h3 {
+    font-size: 16px;
+    text-decoration: none;
+}
+.abilities-info a {
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 428px) {
+    .abilities {
+        padding: 10px;
+    }
+
+    .ability-image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .abilities-info {
+        margin-left: 15px;
+    }
+
+    .abilities-info h3 {
+        font-size: 10px;
+        text-decoration: none;
+    }
+    .abilities-info a {
+        font-size: 10px;
+    }
+}
