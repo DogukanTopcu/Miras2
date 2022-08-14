@@ -9,6 +9,14 @@ import data from "../../data";
 
 const Home = () => {
     const [people, setPeople] = useState(data);
+
+    const [limitAdvisor, setLimitAdvisor] = useState(12);
+    const [advisorCount, setAdvisorCount] = useState(0);
+
+
+    const getAdvisors = (advisorLimit, count) => {
+      
+    }
   return (
     <div>
       <Banner />
@@ -33,10 +41,12 @@ const Home = () => {
             <div className='all-advisors'>
                 {
                     people.map((person) => {
-                        const {id} = person;
-                        return (
-                            <Advisor key={id} person={person} />                  
-                        )
+                      const { id } = person;
+                      // setAdvisorCount(advisorCount + 1);
+                      return (
+                        advisorCount < 10 ? ( <Advisor key={id} person={person} /> ) : (<div>Daha fazla Göster</div>)
+                        // <Advisor key={id} person={person} />
+                      )
                     })
                 }
             </div>

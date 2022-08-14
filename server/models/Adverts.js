@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const usersSchema = mongoose.Schema({
+const advertsSchema = mongoose.Schema({
     fullName: String,
     email: String,
     password: String,
@@ -24,6 +24,6 @@ const usersSchema = mongoose.Schema({
     }
 });
 
-const Users = mongoose.model("Users", usersSchema);
+const Adverts = mongoose.model("Adverts", advertsSchema);
 
-export default Users;
+export default Adverts;

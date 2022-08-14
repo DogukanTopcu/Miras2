@@ -4,6 +4,7 @@ import express from "express";
 import mongoose from "mongoose";
 
 import usersRoutes from "./routes/Users.js";
+import advisorRoutes from "./routes/Advisors.js"
 
 
 import dotenv from "dotenv";
@@ -30,3 +31,6 @@ app.use("/user", usersRoutes);
 
 app.use("/comments", usersRoutes);
 app.use("/advert", usersRoutes); // uzman ilanı verme
+
+
+app.use("/advisors", advisorRoutes);
