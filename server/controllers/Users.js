@@ -65,3 +65,15 @@ export const forgetPassword = async (req, res) => {
 export const newPassword = async (req, res) => {
     
 }
+
+
+export const isUserExist = async (req, res) => {
+    try {
+        const isExist = await Users.findOne({ email: req.body.email });
+        if (isExist._id) {
+            res.send(true);
+        }
+    } catch (error) {
+        res.send(false);
+    }
+}

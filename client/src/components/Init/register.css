@@ -62,6 +62,15 @@
     margin-left: 20px;
 }
 
+.registerAlert {
+    text-align: center;
+    background-color: rgba(197, 0, 0, 0.792);
+    color: #fff;
+    border-radius: 5px;
+    border: 3px solid rgb(255, 131, 131);
+    font-size: 14px;
+    padding: 5px;
+}
 
 @media screen and (max-width: 428px) {
     .register {
@@ -83,5 +92,9 @@
     .register-proccess-buttons p {
         margin-bottom: -10px;
         margin-left: 0;
+    }
+
+    .registerAlert {
+        font-size: 12px;
     }
 }
