@@ -41,6 +41,11 @@ const Register = () => {
             <h2 className='register-top-miras'>Miras Eğitim</h2>
         </div>
         <center><div className='register-line'></div></center>
+        {
+          location.pathname == "/register/advisor" ? (
+            <p>Uzman ilanı vermek için önce kayıt olmalısınız...</p>
+          ) : null
+        }
         <div className='register-inputs'>
             <TextField required  sx={{ m: "15px 0", width: '100%' }} fullWidth label="Ad Soyad" value={newUser.fullName} onChange={e => setNewUser({...newUser, fullName: e.target.value})} />
             <TextField required fullWidth label="Email" value={newUser.email} onChange={e => setNewUser({...newUser, email: e.target.value})} />
@@ -77,11 +82,11 @@ const Register = () => {
                 location.pathname === "/register/user" ? (
                     <button onClick={() => {
                       dispatch(createUser(newUser));
-                      navigation(`/register/user/fullName=${newUser.fullName}&email=${newUser.email}`);
+                      navigation(`/register/user/feed`);
                     }} className='register-button'>Kayıt Ol</button>
                 )
                 : location.pathname === "/register/advisor" ? (
-                    <button onClick={() => navigation(`/register/advisor/`)}  className='register-button'>Kayıt Ol ve Devam Et</button>
+                    <button onClick={() => navigation(`/register/advisor/feed`)} className='register-button'>Kayıt Ol ve Devam Et</button>
                 ) : null
             }
             <p>Zaten bir hesabınız var mı? <Link to="/login" >Giriş Yap</Link></p>

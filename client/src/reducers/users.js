@@ -9,7 +9,9 @@ export default (user = [], action) => {
         case "LOGINLOCALLY":
             return action.payload;
             break;
-    
+        case "LOGOUT":
+            return action.payload;
+            break;
         default:
             return user;
     }

@@ -1,0 +1,98 @@
+.registerFeed {
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #fffbef;
+    color: #6b3600;
+    border-radius: 25px;
+
+    max-width: 500px;
+}
+
+.registerFeed-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.registerFeed-top-miras {
+    font-family: "AlmendraRegular";
+}
+
+.registerFeed-top-title {
+    font-family: "Allura";
+}
+
+.registerFeed-line {
+    border-bottom: 0.3px solid rgba(0, 0, 0, 0.5);
+    width: 90% !important;
+    margin-bottom: 20px;
+}
+
+.registerFeed-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.registerFeed-proccess-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.registerFeed-button {
+    border: none;
+    padding: 15px 30px;
+    margin-top: 15px;
+    background-color: #b36738;
+    font-size: 16px;
+    color: #fffbef;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    margin-bottom: 20px;
+}
+
+.registerFeed-button:hover {
+    background-color: #94552e;
+}
+
+
+
+
+@media screen and (max-width: 428px) {
+    .registerFeed {
+        margin: 100px 10px 0 10px;
+    }
+
+    .registerFeed-top-miras {
+        font-size: 16px;
+    }
+
+    .registerFeed-top-title {
+        font-size: 16px;
+    }
+
+    .registerFeed-proccess-buttons {
+        margin-bottom: 20px;
+    }
+
+    .registerFeed-button {
+        padding: 12px 25px;
+        margin-top: 12px;
+        font-size: 12px;
+        border-radius: 25px;
+        margin-bottom: 20px;
+    }
+
+    .registerFeed-proccess-buttons p {
+        margin-bottom: -10px;
+        margin-left: 0;
+    }
+}

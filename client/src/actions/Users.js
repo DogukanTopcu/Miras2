@@ -40,3 +40,14 @@ export const forgetPassword = (email) => async (dispatch) => {
         console.log(error);
     }
 }
+
+
+
+export const logout = () => async (dispatch) => {
+    try {
+        localStorage.removeItem("currentUser");
+        dispatch({ type: "LOGOUT", payload: [] });
+    } catch (error) {
+        console.log(error);
+    }
+}

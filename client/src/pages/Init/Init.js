@@ -2,12 +2,12 @@ import React from 'react';
 import './init.css';
 
 import { useLocation, useNavigate } from 'react-router-dom';
-import img from "../../assets/img/photo-1566755656135-f2ca6d8b1d9c.avif";
 import Miras from '../../components/Init/Miras';
 import Login from '../../components/Init/Login';
 import Register from '../../components/Init/Register';
 import ForgetPassword from '../../components/Init/ForgetPassword';
 import NewPass from '../../components/Init/NewPass';
+import RegisterFeed from '../../components/Init/RegisterFeed';
 
 const Init = () => {
   const location = useLocation();
@@ -32,6 +32,9 @@ const Init = () => {
             )
             : location.pathname === "/new-password" ? (
               <NewPass />
+            ) 
+            : location.pathname === "/register/user/feed" || location.pathname === "/register/advisor/feed" ? (
+              <RegisterFeed />
             )
             : null
           }

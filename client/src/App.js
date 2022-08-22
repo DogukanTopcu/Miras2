@@ -49,9 +49,11 @@ function App() {
         <Route path='/login' element={<Init />} />
         <Route path='/forget-my-password' element={<Init />} />
         <Route path='/register/user' element={<Init />} />
-        <Route path='/register/user/:user' element={<Init />} />
+        {/* <Route path='/register/user/:user' element={<Init />} /> */}
+        <Route path='/register/user/feed' element={<Init />} />
         <Route path='/register/advisor' element={<Init />} />
-        <Route path='/register/advisor/:user' element={<Init />} />
+        {/* <Route path='/register/advisor/:user' element={<Init />} /> */}
+        <Route path='/register/advisor/feed' element={<Init />} />
         <Route path='/new-password' element={<Init />} />
         <Route path='/new-password/:userLogin' element={<Init />} />
 
