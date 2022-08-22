@@ -10,6 +10,7 @@ import Save from './pages/Save/Save';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { loginLocally } from './actions/Users';
+import AdvisorPosting from './pages/AdvisorPosting/AdvisorPosting';
 
 function App() {
 
@@ -65,6 +66,9 @@ function App() {
         <Route path='/advisor/:advisor' element={<Advisor advisor={data[1]} />} />
 
         <Route path='/saves' element={<Save />} />
+
+        <Route path='/advisor-posting' element={<AdvisorPosting />} />
+        <Route path='/register/advisor-posting' element={<AdvisorPosting />} />
         
       </Route>
     </Routes>
