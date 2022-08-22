@@ -52,15 +52,45 @@
     cursor: pointer;
     margin-right: 3px;
 }
+
+.navbar-dropdown {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    margin-left: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    display: flex;
+    align-items: center;
+}
+.navbar-dropdown:hover {
+    background-color: rgba(0, 0, 0, 0.45);
+}
 .dropdown-button {
-    background-color: rgb(140, 137, 137);
     color: white;
     padding: 3px 10px;
-    margin-left: 15px;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
+.navbar-right-dropdown {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    position: fixed;
+    border-radius: 10px;
+    margin-top: 135px;
+    margin-left: 10px;
+}
+.uzman-ilan-bg {
+    background-color: rgb(140, 137, 137);
+}
+.uzman-ilan-bg:hover {
+    background-color: rgb(117, 116, 116);
+}
 
 @media screen and (max-width: 760px) {
     .navbar-content {

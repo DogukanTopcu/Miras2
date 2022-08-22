@@ -19,27 +19,26 @@ function App() {
   
   useEffect(() => {
     const localUser = JSON.parse(localStorage.getItem("currentUser"));
-    console.log(localUser);
     dispatch(loginLocally(localUser));
   }, []);
   
-  const user = useSelector((state) => state.user);
+  var user = useSelector((state) => state.user);
   console.log(user);
-
-  console.log(location.pathname);
-  // console.log(location.search);
-  console.log(location.search ? location.search : "Nope");
-  console.log(`${location.pathname}${location.search ? location.search : ""}`);
   
   useEffect(() => {
-    if (user._id) {
-      // navigation(`${location.pathname}${location.search ? location.search : ""}`);
-      navigation("/home");
-    } else {
-      navigation("/");
+    const localUser = JSON.parse(localStorage.getItem("currentUser"));
+    
+    if (user.length == 0 && !user._id && !localUser) {
+      if (location.pathname === "/home" || location.pathname === "/saves") {
+        navigation("/");
+      }
     }
-  }, [user]);
+    else if (user._id && location.pathname === "/login") {
+      navigation("/home");
+    }
 
+
+  }, [user]);
 
 
 
