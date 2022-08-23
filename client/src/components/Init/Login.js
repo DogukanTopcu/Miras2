@@ -36,7 +36,7 @@ const Login = () => {
         password: pass
     });
 
-    
+    const [alertMessage, setAlertMessage] = useState("");
 
     const [showPassword, setShowPassword] = useState(false);
     
@@ -48,6 +48,9 @@ const Login = () => {
             <h2 className='login-top-miras'>Miras Eğitim</h2>
         </div>
         <center><div className='login-line'></div></center>
+        {
+          alertMessage ? <div style={{marginTop: "0px", marginBottom: "10px"}} className='registerAlert'>{alertMessage}</div> : null
+        }
         <div className='login-inputs'>
             <TextField fullWidth label="Email" value={userLogin.email} onChange={e => setUserLogin({...userLogin, email: e.target.value})} />
             <FormControl sx={{ m: "20px 0", width: '100%' }} variant="outlined">
@@ -77,6 +80,9 @@ const Login = () => {
         <div className='login-proccess-buttons'>
             <button onClick={() => {
               dispatch(login(userLogin));
+              setAlertMessage("...");
+              setTimeout(() => setAlertMessage("Email veya şifre bilgileriniz yanlış"), 2000);
+              setTimeout(() => setAlertMessage(""), 8000)
             }} className='login-button'>Giriş Yap</button>
             <p>Henüz bir hesabınız yok mu? <Link to="/" >Kayıt Ol</Link></p>
             <p>Şifrenizi mi unuttunuz? <Link to="/forget-my-password" >Şifremi Unuttum</Link></p>
